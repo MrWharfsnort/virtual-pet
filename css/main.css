@@ -35,6 +35,11 @@ input {
     margin: 0 4px;
 }
 
+input:active,
+input:focus {
+    border-color: #0d0;
+}
+
 button {
     background-color: deepskyblue;
     color: #fff;
@@ -53,7 +58,7 @@ h1 {
     padding: 4px;
     border: 1px solid deepskyblue;
     border-radius: 4px;
-    background-color: #f4f4f4;
+    background-color: ghostwhite;
 }
 /*
 .pet:hover {
