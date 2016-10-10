@@ -8,19 +8,23 @@ function View(controller) {
         
         $playButton.click(function() {
             var quantity = parseInt($playQty.val());
-            if (quantity) {
+            if (!quantity) {
+                controller.playWithPet(pet.name, 1);
+            } else {
                 controller.playWithPet(pet.name, quantity);
-                this.showAllPets();
             }
+            this.showAllPets();
         }.bind(this));
 
         $feedButton.click(function() {
             var quantity = parseInt($foodQty.val());
 
-            if (quantity) {
+            if (!quantity) {
+                controller.feedPet(pet.name, 1);
+            } else {
                 controller.feedPet(pet.name, quantity);
-                this.showAllPets();
             }
+            this.showAllPets();
         }.bind(this));
 
         var $pet = $("<div class=\"pet\">" +
