@@ -19,4 +19,10 @@ function Model() {
     this.getAllPets = function() {
         return pets.slice();
     }
+
+
+    this.deletePet = function(index) {
+        pets.splice(index, 1);
+    }
+
 }

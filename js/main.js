@@ -5,9 +5,6 @@ $(document).ready(function() {
 
     v.showAllPets();
 
-    $('#newpet').click(function() {
-        console.log("new pet");
-        v.createPet();
-    });
+    $("#petname").attr("maxlength", 12);
     
 });

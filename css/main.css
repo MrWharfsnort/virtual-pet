@@ -1,0 +1,55 @@
+html, body, * {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font: 18px sans-serif;
+    color: #333;
+}
+.pet-input {
+    margin: 16px;
+}
+
+#output {
+    position: relative;
+}
+
+p, button, input {
+    font-size: .8rem;
+    margin-bottom: 4px;
+}
+
+button, input {
+    border: 1px solid #bbb;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+input {
+    margin: 0 4px;
+}
+
+button {
+    background-color: deepskyblue;
+    color: #fff;
+    border: 1px solid dodgerblue;
+}
+
+h1 {
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+}
+
+.pet {
+    float: left;
+    width: calc(20% - 42px);
+    margin: 16px;
+    padding: 4px;
+    border: 1px solid deepskyblue;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+}
+
+
+.pet-type {
+    font-size: 3rem;
+}
